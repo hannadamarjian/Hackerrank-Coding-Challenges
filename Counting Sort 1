@@ -1,0 +1,21 @@
+Link below:
+https://www.hackerrank.com/challenges/one-week-preparation-kit-countingsort1/
+
+## My Code:
+
+def countingSort(arr):
+    
+    zeros_list = []
+    for i in range(0,n):
+        if n < 100 or n > 10**6:
+            print("Error")
+            quit()
+        zeros_list.append(0) # an array filled with n zeros with index from 0 to n-1.
+    for i in range(0,n):
+        if 0 > arr[i] or 100 < arr[i]:
+            print("Error")
+            quit()
+        integer = arr[i] 
+        zeros_list[integer] = zeros_list[integer] + 1
+    first_100 = zeros_list[:100]        
+    return first_100
