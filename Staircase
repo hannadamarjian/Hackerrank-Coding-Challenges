@@ -1,0 +1,7 @@
+def staircase(n):
+    spaces = n-1
+    dial = 1
+    for i in range(0,n):
+        print(' '*spaces + '#'*dial)
+        spaces -= 1
+        dial += 1
