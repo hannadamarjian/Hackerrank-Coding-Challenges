@@ -1,0 +1,36 @@
+def gradingStudents(grades):
+    final_grade = list()
+    for i in range(len(grades)):
+        if grades[i] < 38:
+            final_grade.append(grades[i])
+        if grades[i] % 5 != 0 and grades[i] >= 38:
+            if grades[i] % 5 == 1:
+                value = grades[i] + 4
+                if (value - grades[i]) < 3:
+                    final_grade.append(value)
+                else:
+                    final_grade.append(grades[i])
+            elif grades[i] % 5 == 2:
+                value = grades[i] + 3
+                if (value - grades[i]) < 3:
+                    final_grade.append(value)
+                else:
+                    final_grade.append(grades[i])
+            elif grades[i] % 5 == 3:
+                value = grades[i] + 2
+                if value - grades[i] < 3:
+                    final_grade.append(value)
+                else:
+                    final_grade.append(grades[i])
+            else:
+                value = grades[i] + 1
+                if (value - grades[i]) < 3:
+                    final_grade.append(value)
+                else:
+                    final_grade.append(grades[i])
+        elif grades[i] % 5 == 0 and grades[i] >= 38:
+            final_grade.append(grades[i])
+        else:
+            continue
+             
+    return final_grade
