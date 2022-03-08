@@ -1,0 +1,14 @@
+def compareTriplets(a, b):
+    alice = 0
+    bob = 0
+    for i in range(0,3):
+        if a[i] > b[i]:
+            alice += 1
+        elif a[i] < b[i]:
+            bob += 1
+        else:
+            continue
+    scores = [0, 0]
+    scores[0] = alice
+    scores[1] = bob
+    return scores
