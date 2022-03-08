@@ -1,0 +1,8 @@
+def birthdayCakeCandles(candles):
+    candles.sort() 
+    tallest_candle_value = candles[-1]
+    count = 0
+    for i in range(len(candles)):
+        if candles[i] == tallest_candle_value:
+            count += 1
+    return count 
