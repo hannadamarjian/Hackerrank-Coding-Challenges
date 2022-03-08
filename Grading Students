@@ -1,3 +1,24 @@
+Shortened Code:
+
+def gradingStudents(grades):
+    final_grade = list()
+    for i in range(len(grades)):
+        if grades[i] < 38:
+            final_grade.append(grades[i])
+        elif grades[i] % 5 == 3 and grades[i] >= 38:
+            value = grades[i] + 2 # b/c remainder is 3.
+            final_grade.append(value)
+        elif grades[i] % 5 == 4 and grades[i] >= 38:
+            value = grades[i] + 1 # b/c remainder is 4.
+            final_grade.append(value)
+        else:
+            final_grade.append(grades[i]) 
+    return final_grade  
+
+
+
+Brute and Force Method:
+
 def gradingStudents(grades):
     final_grade = list()
     for i in range(len(grades)):
@@ -34,3 +55,4 @@ def gradingStudents(grades):
             continue
              
     return final_grade
+   
