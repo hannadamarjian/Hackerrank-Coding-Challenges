@@ -1,0 +1,8 @@
+def birthday(s, d, m):
+    numb_of_ways = 0
+    for i in range(n):
+        if sum(s[i:i+m]) == d:
+            numb_of_ways += 1
+        else:
+            continue
+    return numb_of_ways
