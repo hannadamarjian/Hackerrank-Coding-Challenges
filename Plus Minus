@@ -42,3 +42,24 @@ if __name__ == '__main__':
     arr = list(map(int, input().rstrip().split()))
 
     plusMinus(arr)
+
+    
+    
+ UPDATED:
+        
+        
+        
+ def plusMinus(arr):
+    pos = list()
+    neg = list()
+    zero = list()
+    for numb in arr:
+        if numb > 0:
+            pos.append(numb)
+        elif numb == 0:
+            zero.append(numb)
+        else:
+            neg.append(numb)
+    print(round(len(pos)/len(arr), 6))
+    print(round(len(neg)/len(arr), 6))
+    print(round(len(zero)/len(arr), 6))
