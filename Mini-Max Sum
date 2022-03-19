@@ -23,3 +23,14 @@ if __name__ == '__main__':
     arr = list(map(int, input().rstrip().split()))
 
     miniMaxSum(arr)
+    
+
+UPDATED:
+    
+    def miniMaxSum(arr):
+    
+    min = sum(sorted(arr)[:4])
+    max = sum(sorted(arr)[1:])
+    print(min, max)
+
+
