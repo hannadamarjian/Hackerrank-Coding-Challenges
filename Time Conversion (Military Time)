@@ -41,7 +41,7 @@ if __name__ == '__main__':
     fptr.close()
     
     
-    
+UPDATED:
     
     if int(s[0:2]) < 12 and s[-2:] == "AM":
         s = s[0:8]
