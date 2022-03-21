@@ -39,3 +39,20 @@ if __name__ == '__main__':
     fptr.write(result + '\n')
 
     fptr.close()
+    
+    
+    
+    
+    if int(s[0:2]) < 12 and s[-2:] == "AM":
+        s = s[0:8]
+        return s
+    elif s[0:2] == "12" and s[-2:] == "AM":
+        t = "00" + s[2:8]
+        return t
+    elif int(s[0:2]) < 12 and s[-2:] == "PM":
+        u = int(s[0:2]) + 12
+        v = str(u) + s[2:8]
+        return v
+    else: 
+        w = s[0:8]
+        return w
