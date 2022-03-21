@@ -1,0 +1,10 @@
+def matchingStrings(strings, queries):
+    count = 0
+    results = list()
+    for query in queries:
+        for string in strings:
+            if query == string:
+                count += 1
+        results.append(count)
+        count = 0
+    return results
