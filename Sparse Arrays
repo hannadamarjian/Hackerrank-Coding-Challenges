@@ -8,3 +8,14 @@ def matchingStrings(strings, queries):
         results.append(count)
         count = 0
     return results
+    
+    
+    
+UPDATED:
+
+def matchingStrings(strings, queries):
+    count = 0
+    results = []
+    for query in queries:
+        results.append(strings.count(query))
+    return results
