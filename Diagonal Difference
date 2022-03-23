@@ -48,3 +48,21 @@ if __name__ == '__main__':
     fptr.write(str(result) + '\n')
 
     fptr.close()
+    
+    
+    
+    
+    UPDATED:
+        
+        def diagonalDifference(arr):
+    lrdiag = list()
+    for i in range(n):
+        for j in range(n):
+            if i == j:
+                lrdiag.append(arr[i][j])
+    rldiag = list()
+    for i in range(n):
+        for j in range(n):
+            if i + j == len(arr) - 1:
+                rldiag.append(arr[i][j])
+    return abs(sum(lrdiag) - sum(rldiag))
